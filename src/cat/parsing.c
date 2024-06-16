@@ -1,9 +1,9 @@
 #include "cat_internals.h"
 
-static void parse_short_flag(char flag, Cat_flags *flags);
-static bool parse_gnu_flag(const char *arg, Cat_flags *flags);
+static void parse_short_flag(char flag, Flags *flags);
+static bool parse_gnu_flag(const char *arg, Flags *flags);
 
-char *parse_args(int argc, char *argv[], Cat_flags *flags, char *files[], int *file_count) {
+char *parse_args(int argc, char *argv[], Flags *flags, char *files[], int *file_count) {
     for (int i = 1; i < argc; i++) {
         if (argv[i][0] == '-') {
             if (argv[i][1] == '-') {
@@ -22,22 +22,22 @@ char *parse_args(int argc, char *argv[], Cat_flags *flags, char *files[], int *f
     return NULL;
 }
 
-static void parse_short_flag(char flag, Cat_flags *flags) {
+static void parse_short_flag(char flag, Flags *flags) {
     switch (flag) {
         case 'A':
-            flags->is_nonprinting_chars = true;
+            flags->is_non_printing_chars = true;
             flags->is_tabs = true;
             flags->is_end_of_string = true;
             break;
         case 't':
-            flags->is_nonprinting_chars = true;
+            flags->is_non_printing_chars = true;
             flags->is_tabs = true;
             break;
         case 'T':
             flags->is_tabs = true;
             break;
         case 'e':
-            flags->is_nonprinting_chars = true;
+            flags->is_non_printing_chars = true;
             flags->is_end_of_string = true;
             break;
         case 'E':
@@ -56,14 +56,14 @@ static void parse_short_flag(char flag, Cat_flags *flags) {
             flags->is_all_line_numbers = false;
             break;
         case 'v':
-            flags->is_nonprinting_chars = true;
+            flags->is_non_printing_chars = true;
             break;
         default:
             break;
     }
 }
 
-static bool parse_gnu_flag(const char *arg, Cat_flags *flags) {
+static bool parse_gnu_flag(const char *arg, Flags *flags) {
     if (strcmp(arg, GNU_all_line_numbers) == 0) {
         if (!flags->is_non_empty_line_numbers) {
             flags->is_all_line_numbers = true;

@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
     char *files[argc];
 
     int file_count = 0;
-    Cat_flags flags = {false, false, false, false, false, false};
+    Flags flags = {false, false, false, false, false, false};
 
     char *error_parse_args = parse_args(argc, argv, &flags, files, &file_count);
     if (error_parse_args != NULL) {
