@@ -7,7 +7,7 @@ EXECUTABLE_GREP=s21_grep
 CATDIR=cat/
 GREPDIR=grep/
 
-SOURCES_CAT=$(CATDIR)s21_cat.c $(CATDIR)parsing.c $(CATDIR)cat_functions.c
+SOURCES_CAT=$(CATDIR)s21_cat.c $(CATDIR)cat_parser.c $(CATDIR)cat_functions.c
 SOURCES_GREP=$(GREPDIR)s21_grep.c $(GREPDIR)parsing_grep.c $(GREPDIR)grep_functions.c
 
 OBJECTS_CAT=$(SOURCES_CAT:.c=.o)
