@@ -1,0 +1,315 @@
+char - ^@, int - 0, 1-st symbol$
+char - ^A, int - 1, 2-st symbol$
+char - ^B, int - 2, 3-st symbol$
+char - ^C, int - 3, 4-st symbol$
+char - ^D, int - 4, 5-st symbol$
+char - ^E, int - 5, 6-st symbol$
+char - ^F, int - 6, 7-st symbol$
+char - ^G, int - 7, 8-st symbol$
+char - ^H, int - 8, 9-st symbol$
+char - ^I, int - 9, 10-st symbol$
+char - $
+, int - 10, 11-st symbol$
+char - ^K, int - 11, 12-st symbol$
+char - ^L, int - 12, 13-st symbol$
+char - ^M, int - 13, 14-st symbol$
+char - ^N, int - 14, 15-st symbol$
+char - ^O, int - 15, 16-st symbol$
+char - ^P, int - 16, 17-st symbol$
+char - ^Q, int - 17, 18-st symbol$
+char - ^R, int - 18, 19-st symbol$
+char - ^S, int - 19, 20-st symbol$
+char - ^T, int - 20, 21-st symbol$
+char - ^U, int - 21, 22-st symbol$
+char - ^V, int - 22, 23-st symbol$
+char - ^W, int - 23, 24-st symbol$
+char - ^X, int - 24, 25-st symbol$
+char - ^Y, int - 25, 26-st symbol$
+char - ^Z, int - 26, 27-st symbol$
+char - ^[, int - 27, 28-st symbol$
+char - ^\, int - 28, 29-st symbol$
+char - ^], int - 29, 30-st symbol$
+char - ^^, int - 30, 31-st symbol$
+char - ^_, int - 31, 32-st symbol$
+char -  , int - 32, 33-st symbol$
+char - !, int - 33, 34-st symbol$
+char - ", int - 34, 35-st symbol$
+char - #, int - 35, 36-st symbol$
+char - $, int - 36, 37-st symbol$
+char - %, int - 37, 38-st symbol$
+char - &, int - 38, 39-st symbol$
+char - ', int - 39, 40-st symbol$
+char - (, int - 40, 41-st symbol$
+char - ), int - 41, 42-st symbol$
+char - *, int - 42, 43-st symbol$
+char - +, int - 43, 44-st symbol$
+char - ,, int - 44, 45-st symbol$
+char - -, int - 45, 46-st symbol$
+char - ., int - 46, 47-st symbol$
+char - /, int - 47, 48-st symbol$
+char - 0, int - 48, 49-st symbol$
+char - 1, int - 49, 50-st symbol$
+char - 2, int - 50, 51-st symbol$
+char - 3, int - 51, 52-st symbol$
+char - 4, int - 52, 53-st symbol$
+char - 5, int - 53, 54-st symbol$
+char - 6, int - 54, 55-st symbol$
+char - 7, int - 55, 56-st symbol$
+char - 8, int - 56, 57-st symbol$
+char - 9, int - 57, 58-st symbol$
+char - :, int - 58, 59-st symbol$
+char - ;, int - 59, 60-st symbol$
+char - <, int - 60, 61-st symbol$
+char - =, int - 61, 62-st symbol$
+char - >, int - 62, 63-st symbol$
+char - ?, int - 63, 64-st symbol$
+char - @, int - 64, 65-st symbol$
+char - A, int - 65, 66-st symbol$
+char - B, int - 66, 67-st symbol$
+char - C, int - 67, 68-st symbol$
+char - D, int - 68, 69-st symbol$
+char - E, int - 69, 70-st symbol$
+char - F, int - 70, 71-st symbol$
+char - G, int - 71, 72-st symbol$
+char - H, int - 72, 73-st symbol$
+char - I, int - 73, 74-st symbol$
+char - J, int - 74, 75-st symbol$
+char - K, int - 75, 76-st symbol$
+char - L, int - 76, 77-st symbol$
+char - M, int - 77, 78-st symbol$
+char - N, int - 78, 79-st symbol$
+char - O, int - 79, 80-st symbol$
+char - P, int - 80, 81-st symbol$
+char - Q, int - 81, 82-st symbol$
+char - R, int - 82, 83-st symbol$
+char - S, int - 83, 84-st symbol$
+char - T, int - 84, 85-st symbol$
+char - U, int - 85, 86-st symbol$
+char - V, int - 86, 87-st symbol$
+char - W, int - 87, 88-st symbol$
+char - X, int - 88, 89-st symbol$
+char - Y, int - 89, 90-st symbol$
+char - Z, int - 90, 91-st symbol$
+char - [, int - 91, 92-st symbol$
+char - \, int - 92, 93-st symbol$
+char - ], int - 93, 94-st symbol$
+char - ^, int - 94, 95-st symbol$
+char - _, int - 95, 96-st symbol$
+char - `, int - 96, 97-st symbol$
+char - a, int - 97, 98-st symbol$
+char - b, int - 98, 99-st symbol$
+char - c, int - 99, 100-st symbol$
+char - d, int - 100, 101-st symbol$
+char - e, int - 101, 102-st symbol$
+char - f, int - 102, 103-st symbol$
+char - g, int - 103, 104-st symbol$
+char - h, int - 104, 105-st symbol$
+char - i, int - 105, 106-st symbol$
+char - j, int - 106, 107-st symbol$
+char - k, int - 107, 108-st symbol$
+char - l, int - 108, 109-st symbol$
+char - m, int - 109, 110-st symbol$
+char - n, int - 110, 111-st symbol$
+char - o, int - 111, 112-st symbol$
+char - p, int - 112, 113-st symbol$
+char - q, int - 113, 114-st symbol$
+char - r, int - 114, 115-st symbol$
+char - s, int - 115, 116-st symbol$
+char - t, int - 116, 117-st symbol$
+char - u, int - 117, 118-st symbol$
+char - v, int - 118, 119-st symbol$
+char - w, int - 119, 120-st symbol$
+char - x, int - 120, 121-st symbol$
+char - y, int - 121, 122-st symbol$
+char - z, int - 122, 123-st symbol$
+char - {, int - 123, 124-st symbol$
+char - |, int - 124, 125-st symbol$
+char - }, int - 125, 126-st symbol$
+char - ~, int - 126, 127-st symbol$
+char - ^?, int - 127, 128-st symbol$
+char - M-^@, int - 128, 129-st symbol$
+char - M-^A, int - 129, 130-st symbol$
+char - M-^B, int - 130, 131-st symbol$
+char - M-^C, int - 131, 132-st symbol$
+char - M-^D, int - 132, 133-st symbol$
+char - M-^E, int - 133, 134-st symbol$
+char - M-^F, int - 134, 135-st symbol$
+char - M-^G, int - 135, 136-st symbol$
+char - M-^H, int - 136, 137-st symbol$
+char - M-^I, int - 137, 138-st symbol$
+char - M-^J, int - 138, 139-st symbol$
+char - M-^K, int - 139, 140-st symbol$
+char - M-^L, int - 140, 141-st symbol$
+char - M-^M, int - 141, 142-st symbol$
+char - M-^N, int - 142, 143-st symbol$
+char - M-^O, int - 143, 144-st symbol$
+char - M-^P, int - 144, 145-st symbol$
+char - M-^Q, int - 145, 146-st symbol$
+char - M-^R, int - 146, 147-st symbol$
+char - M-^S, int - 147, 148-st symbol$
+char - M-^T, int - 148, 149-st symbol$
+char - M-^U, int - 149, 150-st symbol$
+char - M-^V, int - 150, 151-st symbol$
+char - M-^W, int - 151, 152-st symbol$
+char - M-^X, int - 152, 153-st symbol$
+char - M-^Y, int - 153, 154-st symbol$
+char - M-^Z, int - 154, 155-st symbol$
+char - M-^[, int - 155, 156-st symbol$
+char - M-^\, int - 156, 157-st symbol$
+char - M-^], int - 157, 158-st symbol$
+char - M-^^, int - 158, 159-st symbol$
+char - M-^_, int - 159, 160-st symbol$
+char - M- , int - 160, 161-st symbol$
+char - M-!, int - 161, 162-st symbol$
+char - M-", int - 162, 163-st symbol$
+char - M-#, int - 163, 164-st symbol$
+char - M-$, int - 164, 165-st symbol$
+char - M-%, int - 165, 166-st symbol$
+char - M-&, int - 166, 167-st symbol$
+char - M-', int - 167, 168-st symbol$
+char - M-(, int - 168, 169-st symbol$
+char - M-), int - 169, 170-st symbol$
+char - M-*, int - 170, 171-st symbol$
+char - M-+, int - 171, 172-st symbol$
+char - M-,, int - 172, 173-st symbol$
+char - M--, int - 173, 174-st symbol$
+char - M-., int - 174, 175-st symbol$
+char - M-/, int - 175, 176-st symbol$
+char - M-0, int - 176, 177-st symbol$
+char - M-1, int - 177, 178-st symbol$
+char - M-2, int - 178, 179-st symbol$
+char - M-3, int - 179, 180-st symbol$
+char - M-4, int - 180, 181-st symbol$
+char - M-5, int - 181, 182-st symbol$
+char - M-6, int - 182, 183-st symbol$
+char - M-7, int - 183, 184-st symbol$
+char - M-8, int - 184, 185-st symbol$
+char - M-9, int - 185, 186-st symbol$
+char - M-:, int - 186, 187-st symbol$
+char - M-;, int - 187, 188-st symbol$
+char - M-<, int - 188, 189-st symbol$
+char - M-=, int - 189, 190-st symbol$
+char - M->, int - 190, 191-st symbol$
+char - M-?, int - 191, 192-st symbol$
+char - M-@, int - 192, 193-st symbol$
+char - M-A, int - 193, 194-st symbol$
+char - M-B, int - 194, 195-st symbol$
+char - M-C, int - 195, 196-st symbol$
+char - M-D, int - 196, 197-st symbol$
+char - M-E, int - 197, 198-st symbol$
+char - M-F, int - 198, 199-st symbol$
+char - M-G, int - 199, 200-st symbol$
+char - M-H, int - 200, 201-st symbol$
+char - M-I, int - 201, 202-st symbol$
+char - M-J, int - 202, 203-st symbol$
+char - M-K, int - 203, 204-st symbol$
+char - M-L, int - 204, 205-st symbol$
+char - M-M, int - 205, 206-st symbol$
+char - M-N, int - 206, 207-st symbol$
+char - M-O, int - 207, 208-st symbol$
+char - M-P, int - 208, 209-st symbol$
+char - M-Q, int - 209, 210-st symbol$
+char - M-R, int - 210, 211-st symbol$
+char - M-S, int - 211, 212-st symbol$
+char - M-T, int - 212, 213-st symbol$
+char - M-U, int - 213, 214-st symbol$
+char - M-V, int - 214, 215-st symbol$
+char - M-W, int - 215, 216-st symbol$
+char - M-X, int - 216, 217-st symbol$
+char - M-Y, int - 217, 218-st symbol$
+char - M-Z, int - 218, 219-st symbol$
+char - M-[, int - 219, 220-st symbol$
+char - M-\, int - 220, 221-st symbol$
+char - M-], int - 221, 222-st symbol$
+char - M-^, int - 222, 223-st symbol$
+char - M-_, int - 223, 224-st symbol$
+char - M-`, int - 224, 225-st symbol$
+char - M-a, int - 225, 226-st symbol$
+char - M-b, int - 226, 227-st symbol$
+char - M-c, int - 227, 228-st symbol$
+char - M-d, int - 228, 229-st symbol$
+char - M-e, int - 229, 230-st symbol$
+char - M-f, int - 230, 231-st symbol$
+char - M-g, int - 231, 232-st symbol$
+char - M-h, int - 232, 233-st symbol$
+char - M-i, int - 233, 234-st symbol$
+char - M-j, int - 234, 235-st symbol$
+char - M-k, int - 235, 236-st symbol$
+char - M-l, int - 236, 237-st symbol$
+char - M-m, int - 237, 238-st symbol$
+char - M-n, int - 238, 239-st symbol$
+char - M-o, int - 239, 240-st symbol$
+char - M-p, int - 240, 241-st symbol$
+char - M-q, int - 241, 242-st symbol$
+char - M-r, int - 242, 243-st symbol$
+char - M-s, int - 243, 244-st symbol$
+char - M-t, int - 244, 245-st symbol$
+char - M-u, int - 245, 246-st symbol$
+char - M-v, int - 246, 247-st symbol$
+char - M-w, int - 247, 248-st symbol$
+char - M-x, int - 248, 249-st symbol$
+char - M-y, int - 249, 250-st symbol$
+char - M-z, int - 250, 251-st symbol$
+char - M-{, int - 251, 252-st symbol$
+char - M-|, int - 252, 253-st symbol$
+char - M-}, int - 253, 254-st symbol$
+char - M-~, int - 254, 255-st symbol$
+char - M-^?, int - 255, 256-st symbol$
+$
+$
+$
+START$
+$
+$
+$
+smtsmtsmt smt$
+$
+s$
+$
+smt$
+$
+$
+s$
+$
+$
+smt$
+$
+$
+s$
+$
+smt$
+$
+$
+END$
+$
+$
+e$
+$
+$
+$
+START$
+$
+$
+$
+smtsmtsmt smt$
+$
+s$
+$
+smt$
+$
+$
+s$
+$
+$
+smt$
+$
+$
+s$
+$
+smt$
+$
+$
+END$
+$
+$
+e$

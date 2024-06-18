@@ -1,3 +1,0 @@
-	 - this is \t symbol.
-
-Hello,	World!	
