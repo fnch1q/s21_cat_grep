@@ -1,22 +1,22 @@
 #include "grep_internals.h"
 
-char parse_args(int argc, char *argv[], Option *o, char *files[], int *file_c,
+char parse_args(int argc, char *argv[], Flags *flags, char *files[], int *file_c,
                 Pattern *p) {
   for (int i = 1; i < argc; i++) {
     if (argv[i][0] == '-' && (int)strlen(argv[i]) > 1) {
       for (int j = 1; j < (int)strlen(argv[i]); j++) {
-        char res = handle_flag(argv[i][j], argv[i][j + 1], o, p, argv[i + 1]);
+        char res = handle_flag(argv[i][j], argv[i][j + 1], flags, p, argv[i + 1]);
         if (res != 0 && res != 'e' && res != 'f') {
           return res;
         }
         if (res == 'e') {
-          o->is_pattern = true;
+          flags->is_pattern = true;
           char *buf = strchr(argv[i], 'e') + 1;
           add_pattern(p, buf);
           break;
         }
         if (res == 'f') {
-          o->is_pattern = true;
+          flags->is_pattern = true;
           char *buf = strchr(argv[i], 'f') + 1;
           handle_pattern_file(buf, p);
           break;
@@ -30,8 +30,8 @@ char parse_args(int argc, char *argv[], Option *o, char *files[], int *file_c,
     if (!strcmp(argv[k], "")) {
       continue;
     }
-    if (!o->is_pattern) {
-      o->is_pattern = true;
+    if (!flags->is_pattern) {
+      flags->is_pattern = true;
       add_pattern(p, argv[k]);
     } else {
       files[(*file_c)++] = argv[k];
@@ -40,50 +40,50 @@ char parse_args(int argc, char *argv[], Option *o, char *files[], int *file_c,
   return 0;
 }
 
-char handle_flag(char flag, char next_char, Option *o, Pattern *p,
+char handle_flag(char flag, char next_char, Flags *flags, Pattern *p,
                  char *next_arg) {
   switch (flag) {
     case 'i':
-      o->is_register_ignore = true;
+      flags->is_register_ignore = true;
       break;
     case 'v':
-      o->is_invert_results = true;
+      flags->is_invert_results = true;
       break;
     case 's':
-      o->is_file_error_ignore = true;
+      flags->is_file_error_ignore = true;
       break;
     case 'c':
-      o->is_match_count = true;
+      flags->is_match_count = true;
       break;
     case 'n':
-      o->is_num_row = true;
+      flags->is_num_row = true;
       break;
     case 'l':
-      o->is_only_filename = true;
+      flags->is_only_filename = true;
       break;
     case 'h':
-      o->is_filename_ignore = true;
+      flags->is_filename_ignore = true;
       break;
     case 'f':
       if (next_char != 0) {
-        o->is_pattern = true;
+        flags->is_pattern = true;
         return flag;
       }
-      o->is_pattern = true;
+      flags->is_pattern = true;
       handle_pattern_file(next_arg, p);
       strcpy(next_arg, "");
       break;
     case 'e':
       if (next_char != 0) {
-        o->is_pattern = true;
+        flags->is_pattern = true;
         return flag;
       }
-      o->is_pattern = true;
+      flags->is_pattern = true;
       add_pattern(p, next_arg);
       strcpy(next_arg, "");
       break;
     case 'o':
-      o->is_only_match = true;
+      flags->is_only_match = true;
       break;
     default:
       return flag;
