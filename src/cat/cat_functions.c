@@ -10,12 +10,14 @@ void print_files(char *files[], Flags *flags, int file_count) {
             continue;
         }
 
+        int res;
         char ch;
         char prev_ch;
 
         int empty_line_count = 0;
 
-        while ((ch = fgetc(f)) != EOF) {
+        while ((res = fgetc(f)) != EOF) {
+            ch = res;
             bool tabs = false;
             if (flags->is_delete_empty_line) {
                 if (prev_ch == '\n') {
@@ -57,12 +59,12 @@ void print_files(char *files[], Flags *flags, int file_count) {
             if (flags->is_non_printing_chars) {
                 if ((unsigned char)ch > 127) {
                     char buf[] = {ch, 0};
-                    char uc;
                     for (int i = 0; i < (int)strlen(buf); i++) {
-                        uc = (unsigned char)buf[i];
-                        uc = uc & 127;
+                        char uc = (unsigned char)buf[i] & 127;
                         if (uc < 32) {
                             printf("M-^%c", uc + 64);
+                        } else if (uc == 127) {
+                            printf("M-^?");
                         } else {
                             printf("M-%c", uc);
                         }

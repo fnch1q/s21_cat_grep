@@ -7,7 +7,7 @@ char - ^E, int - 5, 6-st symbol$
 char - ^F, int - 6, 7-st symbol$
 char - ^G, int - 7, 8-st symbol$
 char - ^H, int - 8, 9-st symbol$
-char - ^I^I, int - 9, 10-st symbol$
+char - ^I, int - 9, 10-st symbol$
 char - $
 , int - 10, 11-st symbol$
 char - ^K, int - 11, 12-st symbol$
@@ -254,7 +254,8 @@ char - M-{, int - 251, 252-st symbol$
 char - M-|, int - 252, 253-st symbol$
 char - M-}, int - 253, 254-st symbol$
 char - M-~, int - 254, 255-st symbol$
-char - $
+char - M-^?, int - 255, 256-st symbol$
+$
 $
 $
 START$
