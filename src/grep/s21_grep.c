@@ -14,8 +14,7 @@ int main(int argc, char *argv[]) {
   int file_c = 0;
 
   Pattern patterns = {NULL, 0, 0};
-  Flags flags = {false, false, false, false, false,
-                    false, false, false, false};
+  Flags flags = {false, false, false, false, false, false, false, false, false};
   bool many_files = false;
 
   char error_parse_args =

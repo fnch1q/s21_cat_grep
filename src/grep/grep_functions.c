@@ -1,6 +1,7 @@
 #include "grep_internals.h"
 
-void handler(char *files[], Flags flags, bool many_files, int file_c, Pattern *p) {
+void handler(char *files[], Flags flags, bool many_files, int file_c,
+             Pattern *p) {
   int regcomp_val = flags.is_register_ignore ? REG_ICASE : 0;
   many_files = (file_c > 1 && !flags.is_filename_ignore);
 
